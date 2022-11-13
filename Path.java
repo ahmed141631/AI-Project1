@@ -44,7 +44,7 @@ public void printPath() {   //this method enables us to print the path in correc
         System.out.println();
     }
     System.out.println("Time: " + info.getTime());
-    System.out.println("Space: " + info.getSpace());
+    System.out.println("ExpandedNodes " + info.getSpace());
 }
 
 

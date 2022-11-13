@@ -36,8 +36,7 @@ public class BFs implements search {
                     ds.queueSize();
                     
                    }
-                   Path p=new Path(initalBoardNode,temp, ds);
-            p.printPath(); 
+        
                 }
             }
             

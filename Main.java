@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         int [][] puzzle = {
-            {2,1,0},{3,4,5},{6,7,8}
+            {1,2,4},{0,5,4},{6,7,8}
         };
 
         System.out.println("Please chose an Algorithm below:");
@@ -20,7 +20,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         choose=sc.nextInt();
         BoardNode root=new BoardNode(puzzle);
-        search sear=null;
+       
         switch (choose) {
             case 1:
                 BFs bfs=new BFs(root);
@@ -40,10 +40,12 @@ public class Main {
 			int in = sc.nextInt();
             switch (in) {
                 case 1:
-                    sear=new Astar(root, 2);
+                    Astar a=new Astar(root, 1);
+                    a.search();
                     break;
                 case 2:
-                sear=new Astar(root, 1);
+                Astar as=new Astar(root, 2);
+                as.search();
                 default:
                 System.out.println("invalid");
                     break;

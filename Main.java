@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         int [][] puzzle = {
-            {1,2,4},{0,5,4},{6,7,8}
+            {0,3,1},{4,7,2},{6,8,5}
         };
 
         System.out.println("Please chose an Algorithm below:");
@@ -46,12 +46,13 @@ public class Main {
                 case 2:
                 Astar as=new Astar(root, 2);
                 as.search();
+                break;
                 default:
                 System.out.println("invalid");
                     break;
             }
               
-               break; 
+             
         
             default:
                 System.out.println("invalid");

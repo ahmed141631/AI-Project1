@@ -43,7 +43,7 @@ public class Astar implements search {
 		ds.pQueue.add(node);
 		while(!(ds.pQueue.isEmpty())) {
 			node = ds.pQueue.poll();
-			ds.incTime();
+			
 			ds.visited.put(node.hashCode(), node);
 			if(node.is_goal()) {
 				Path p = new Path(initBoardNode,node,ds); // class that creates a path from goal to start Node if goal is reached.

@@ -4,34 +4,7 @@ package EightPuzzle;
  * to perform ManhattanDistance Huerstic and EuclideanDistance
  */
 public class Huerstic {
-    private int hn;
-    private int gn;
-    private int fn;
-  
-
-    public Huerstic(){
-       
-        fn=0;
-        gn=0;
-    }
-    public int getHn(){
-		return hn;
-	}
-    public void setGn(int g){
-		gn = g;
-	}
-    public int getGn(){
-		return gn;
-	}
-    public void setFCost(){
-		fn = gn+hn;
-	}
-    public void setFCost(int fc){
-		fn = fc;
-	}
-    public int getFCost(){
-		return fn;
-	}
+ int hn;
 
 
 public int ManhattanDistance(BoardNode node){
